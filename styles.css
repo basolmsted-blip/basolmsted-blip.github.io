@@ -21,3 +21,17 @@
 .mnemosyne-page .page-hero h1:before{content:"";display:inline-block;width:clamp(70px,8vw,110px);height:clamp(145px,16vw,230px);background:url('assets/mnemosyne-logo.png') center/contain no-repeat;margin-right:.25em;vertical-align:-.25em}
 .project-image img{height:auto}
 @media(max-width:800px){.caption{padding:8rem 1.25rem 6.5rem}.caption>p:last-child{font-size:clamp(1.15rem,5vw,1.55rem)}.group{grid-template-columns:1fr}.project-card.feature::before{width:105px;height:225px;margin-bottom:3rem}.mnemosyne-page .page-hero h1:before{display:block;margin:0 0 1rem}}
+
+/* Portfolio content update */
+.intro h1{margin-top:clamp(1.25rem,3vw,2.5rem)}
+.portrait{width:min(100%,330px);max-height:420px;object-fit:cover;object-position:center 24%;margin:0 auto 2rem}
+.project-card.feature::before{width:min(100%,560px);height:250px;background-image:url('assets/mnemosyne-logo-revised.png');background-position:center;margin:0 auto auto}
+.mnemosyne-page .page-hero h1:before{display:none}
+.mnemosyne-hero-logo{width:min(900px,82vw);max-height:300px;object-fit:contain;object-position:center;margin:2rem auto 3rem}
+.image-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.5rem;margin:2rem 0}
+.image-grid figure{margin:0}
+.image-grid img{width:100%;height:360px;object-fit:cover}
+.image-grid .wide{grid-column:1/-1}
+.image-grid .wide img{height:auto;max-height:600px}
+.image-grid figcaption{font-size:.78rem;color:var(--moss);margin-top:.6rem}
+@media(max-width:800px){.project-card.feature::before{width:100%;height:180px;margin-bottom:3rem}.image-grid{grid-template-columns:1fr}.image-grid .wide{grid-column:auto}.image-grid img{height:auto;max-height:520px}.mnemosyne-hero-logo{width:100%;margin:1.5rem 0 2.5rem}}
